@@ -10,13 +10,39 @@
 
 ---
 
-## Зміст
+<h2>Зміст</h2>
 
-## Комадний рядок
+<details>
+    <summary>Командний рядок</summary>
+    <ul>
+        <li><a href="#command-line-terms">Командний рядок — терміни</a></li>
+        <li><a href="#files-system-terms">Файлова система — терміни</a></li>
+        <li><a href="#path-to-files">Шлях до файлів</a></li>
+        <li><a href="#read-folder-content">Читання вмісту папок(команди)</a></li>
+        <li><a href="#interaction-with-folders">Взаємодія з папками(команди)</a></li>
+        <li><a href="#Командний рядок — взаємодія з файлами (команди)">Взаємодія з файлами(команди)</a></li>
+    </ul>
+</details>
+
+<details>
+  <summary>Git</summary>
+  <ul>
+    <li><a href="#git-overview">Короткий огляд</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>GitHub</summary>
+  <ul>
+    <li><a href="#">GitHub</a></li>
+  </ul>
+</details>
+
+<h2>Комадний рядок</h2>
 
 [Конспект](https://github.com/NickTimosh/git_course/blob/main/notebooks/1.%20%D0%92%D1%81%D1%82%D1%83%D0%BF%20%D0%B2%20%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B8%D0%B9%20%D0%A0%D1%8F%D0%B4%D0%BE%D0%BA.md)
 
-### Командний рядок — терміни
+<h3 id="command-line-terms">Командний рядок — терміни</h3>
 
 <details>
 <summary>Що таке GUI?</summary>
@@ -76,7 +102,7 @@
 
 ---
 
-### Файлова система — терміни
+<h3 id="files-system-terms">Файлова система — терміни</h3>
 
 <details>
 <summary>Що таке каталог (директорія)?</summary>
@@ -125,7 +151,7 @@
 
 ---
 
-### Шлях до файлів
+<h3 id="path-to-files">Шлях до файлів</h3>
 
 <details>
 <summary>Що таке шлях (path)?</summary>
@@ -172,7 +198,7 @@
 
 ---
 
-### Командний рядок — читання вмісту папок (команди)
+<h3 id="read-folder-content">Командний рядок — читання вмісту папок (команди)</h3>
 
 [Конспект](https://github.com/NickTimosh/git_course/blob/main/notebooks/2.%20git%20bash%20-%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8.md)
 
@@ -281,7 +307,7 @@
 
 ---
 
-### Командний рядок — взаємодія з папками (команди)
+<h3 id="interaction-with-folders">Командний рядок — взаємодія з папками (команди)</h3>
 
 [Конспект](https://github.com/NickTimosh/git_course/blob/main/notebooks/2.%20git%20bash%20-%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8.md)
 
@@ -359,7 +385,7 @@
 
 ---
 
-### Командний рядок — взаємодія з файлами (команди)
+<h3 id="interaction-with-files">Командний рядок — взаємодія з файлами (команди)</h3>
 
 [Конспект](https://github.com/NickTimosh/git_course/blob/main/notebooks/2.%20git%20bash%20-%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8.md)
 
@@ -403,6 +429,6 @@
 
 ---
 
-## Git
+<h2>Git</h2>
 
-### Git — короткий огляд
+<h3 id="git-overview">Git — короткий огляд</h3>
