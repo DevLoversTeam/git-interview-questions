@@ -20,7 +20,7 @@
         <li><a href="#path-to-files">Шлях до файлів</a></li>
         <li><a href="#read-folder-content">Читання вмісту папок(команди)</a></li>
         <li><a href="#interaction-with-folders">Взаємодія з папками(команди)</a></li>
-        <li><a href="#Командний рядок — взаємодія з файлами (команди)">Взаємодія з файлами(команди)</a></li>
+        <li><a href="#interaction-with-files">Взаємодія з файлами(команди)</a></li>
     </ul>
 </details>
 
