@@ -51,7 +51,18 @@
 <details>
   <summary>GitHub</summary>
   <ul>
-    <li><a href="#github-overview">Короткий огляд</a></li>
+    <li><a href="#github-concept">Основні концепції</a></li>
+    <li><a href="#github-first-repo">Перший репозиторій</a></li>
+    <li><a href="#github-gitignore">Файл .gitignore</a></li>
+    <li><a href="#github-watch-fork-stars">Watch, fork & stars</a></li>
+    <li><a href="#github-fork">Копіювання репозиторію (Fork)</a></li>
+    <li><a href="#github-pr">Створення Pull Requests (PR)</a></li>
+    <li><a href="#github-issues">Створення Issues (задач)</a></li>
+    <li><a href="#github-workflow">Огляд типового workflow</a></li>
+    <li><a href="#github-ssh-key">SSH-ключ</a></li>
+    <li><a href="#github-push-local-repo">Push локального репозиторію</a></li>
+    <li><a href="#github-brach-and-pull">Гілки та pull request</a></li>
+    <li><a href="#github-clone-repo">Клонування репозиторію</a></li>
   </ul>
 </details>
 
@@ -1167,4 +1178,485 @@
 
 <h2>GitHub</h2>
 
-<h3 id="github-overview">GitHub — короткий огляд</h3>
+<h3 id="github-concept">GitHub — основні концепції</h3>
+
+<h4>Віддалений репозиторій</h4>
+
+<details>
+<summary>Які бувають git-сховища?</summary>
+
+-   GitHub
+-   GitLab
+-   Bitbucket, Azure DevOps, SourceForge — також популярні віддалені репозиторії
+
+</details>
+
+<details>
+<summary>Яке типове ім'я git?</summary>
+
+-   origin - стандартна назва для віддаленого репозиторію, але її можна змінювати
+
+</details>
+
+<h4>Клонування (Clone)</h4>
+
+<details>
+<summary>Що передбачає концепція клонування?</summary>
+
+-   створення локальної копії віддаленого репозиторію на комп'ютері
+
+</details>
+
+<h4>SSH-ключ (SSH-key)</h4>
+
+<details>
+<summary>Що передбачає концепція такого ключа?</summary>
+
+-   спосіб безпечного підключення по GitHub без введення пароля
+    -   SSH-ключ складається з публічного та приватного ключа. Публічний ключ додається до GitHub, а приватний зберігається локально
+
+</details>
+
+<h4>Пуш (Push)</h4>
+
+<details>
+<summary>Що передбачає концепція push?</summary>
+
+-   надсилання змін у віддалений репозиторій
+
+</details>
+
+<details>
+<summary>Яка команда?</summary>
+
+-   git push
+
+</details>
+
+<h4>Пул (pull)</h4>
+
+<details>
+<summary>Що передбачає ця концепція?</summary>
+
+-   завантаження змін з віддаленого репозиторію
+
+</details>
+
+<details>
+<summary>Яка команда?</summary>
+
+-   git pull
+
+</details>
+
+<h4>Пул-реквест (Pull Request, PR)</h4>
+
+<details>
+<summary>Що передбачає ця концепція?</summary>
+
+-   запит на злиття змін із однієї гілки в іншу
+-   часто використовується для перевірки коду
+
+</details>
+
+<details>
+<summary>Як називається перевірка коду іншим розробником?</summary>
+
+-   code review
+
+</details>
+
+<h4>Форк (Fork)</h4>
+
+<details>
+<summary>Що передбачає ця концепція?</summary>
+
+-   копіювання репозиторію в акаунт користувача, що дозволяє експериментувати з кодом, не змінюючи оригінал
+
+</details>
+
+<h4>README.md</h4>
+
+<details>
+<summary>Що це за файл?</summary>
+
+-   файл документації, що зазвичай містить опис проєкту, інструкції з використання та іншу корисну інформацію
+
+</details>
+
+<details>
+<summary>Що означає розширення **.md**</summary>
+
+-   формат markdown
+-   система форматування тексту
+
+</details>
+
+<h4>Issues (Завдання)</h4>
+
+<details>
+<summary>Що передбачає ця концепція?</summary>
+
+-   систему відстеження помилок, запитів на нові функції та обговорень у репозиторії
+
+</details>
+
+---
+
+<h3 id="github-first-repo">GitHub — перший репозиторій</h3>
+
+<details>
+<summary>Яка має бути назва репозиторію?</summary>
+
+-   унікальною в межах репозиторію
+
+</details>
+
+<details>
+<summary>Які бувають типи репозиторіїв?</summary>
+
+-   публічні
+-   приватні
+
+</details>
+
+<details>
+<summary>Що таке ліцензія?</summary>
+
+-   документ, у якому прописано, що можна, а що заборонено робити з репозиторієм (чи можна завантажувати код, перевикористовувати його у власних проєктах і тд)
+-   опис можливостей взаємодії з репозиторієм
+
+</details>
+
+<details>
+<summary>Про що говорить ліцензія MIT?</summary>
+
+-   про те, що код і файли з репозиторію можна використовувати як завгодно без обмежень, але **обов'язково потрібно вказати авторство власника репозиторію, з якого беруться дані**
+
+</details>
+
+<details>
+<summary>Як можна додати файли у репозиторій?</summary>
+
+-   створити прямо на платформі у github
+-   завантажити з комп'ютера через командний рядок
+
+</details>
+
+---
+
+<h3 id="github-gitignore">GitHub — файл .gitignore</h3>
+
+<details>
+<summary>Що таке .gitignore?</summary>
+
+-   файл, який використовується для того, щоб ігнорувати певні файли та папки в git. Файли і теки, додані в .gitignore не будуть додватись у коміти та потрапляти у репозиторій
+
+</details>
+
+<details>
+<summary>Яку папку ні в якому разі не можна додавати у репозиторій?</summary>
+
+-   node_module — тека, яка містить всі залежності, встановлені у проєкті
+
+</details>
+
+<details>
+<summary>Якою командою можна завантажити цю папку, не завантажуючи її у репозиторій?</summary>
+
+-   npm install
+
+</details>
+
+---
+
+<h3 id="github-watch-fork-stars">GitHub — watch, fork & stars</h3>
+
+<details>
+<summary>Що дає змогу робити кнопка "Watch" у репозиторії?</summary>
+
+-   слідкувати за змінами репозиторію
+
+</details>
+
+<details>
+<summary>Що дає змогу зробити кнопка "Fork"?</summary>
+
+-   зробити повну копію репозиторію
+
+</details>
+
+<details>
+<summary>Як використовується зірочка в репозиторіях?</summary>
+
+-   як елементи рейтингу
+
+</details>
+
+---
+
+<h3 id="github-fork">GitHub — копіювання репозиторію (Fork)</h3>
+
+<details>
+<summary>Чи впливають зміни, внесені у скопійований репозиторій на оригінал?</summary>
+
+-   ніяким чином, це два окремі репозиторії
+
+</details>
+
+<details>
+<summary>У якій вкладці можна подивитися, хто зробив копію репозиторію?</summary>
+
+-   insights —> forks
+
+</details>
+
+<details>
+<summary>Як можна змінити видимість репозиторію (яка вкладка і шлях)?</summary>
+
+-   settings —> general —> danger zone —> change repository visibility
+
+</details>
+
+---
+
+<h3 id="github-pr">GitHub — створення Pull Requests (PR)</h3>
+
+<details>
+<summary>Що таке pull request?</summary>
+
+-   запит на об'єднання змін, які розробник вніс в код, з основною гілкою проєкту
+
+</details>
+
+<details>
+<summary>Де розробник може вносити зміни віддалено без шкоди основному репозиторію (два варіанти)?</summary>
+
+-   створити окрему гілку (git branch -b `branch_name`)
+-   повністю скопіювати репозиторій (fork)
+
+</details>
+
+<details>
+<summary>Яка вкладка відповідає за створення pull request?</summary>
+
+-   однойменна "Pull request"
+
+</details>
+
+<details>
+<summary>Який статус повідомляє про те, що об'єднання можливе?</summary>
+
+-   able to merge
+
+</details>
+
+<details>
+<summary>Головна анатомія створення реквесту (схема)</summary>
+
+<img src="./assets/images/main-anatomy-create-request.png" width="1000" alt="The scheme of creating a pull request"/>
+
+</details>
+
+---
+
+<h3 id="github-issues">GitHub — створення Issues (задач)</h3>
+
+<details>
+<summary>Яка вкладка відповідає за створення завдання?</summary>
+
+-   однойменна "Issues"
+
+</details>
+
+<details>
+<summary>Як можна створити задачу?</summary>
+
+-   натиснути на кнопку "New issue"
+-   ввести title — лаконічно пояснити, яка проблема виникла
+-   написати description (за потреби додати якісь додаткові матеріали) — запропонувати кілька рішень
+-   натиснути кнопку "create"
+
+</details>
+
+---
+
+<h3 id="github-workflow">GitHub — огляд типового workflow</h3>
+
+<details>
+<summary>Огляд workflow роботи git-github (схема)</summary>
+
+<img src="./assets/images/workflow-git-github.png" width="1000" alt="The scheme of workflow"/>
+
+</details>
+
+<details>
+<summary>Які основні кроки?</summary>
+
+1. **connection** — утворення зв'язку між git & github
+    1. ssh-key
+2. **sync** — синхронізація того, що є на комп'ютері і того, що є на github
+    1. **push** local to remote repo або
+    2. **clone** remote to local repo
+3. **pull** — завантажити собі останню актуальну версію проєкту (оновлення локального репо)
+4. **branch** — створюємо нову гілку
+5. **commit** — передаємо зміни з гілки до локального репо
+6. **push** — відправляємо всю гілку зі змінами до віддаленого репо
+7. **pull request** — інформація про зміни, які ми плануємо передати до main
+    1. code review
+    2. merge
+8. повторюємо цикл з пункту три
+
+</details>
+
+---
+
+<h3 id="github-ssh-key">GitHub — SSH-ключ</h3>
+
+<details>
+<summary>Що таке ssh-ключ?</summary>
+
+-   файл, який має зберігати приватний ключ на комп'ютері та одночасно публічний ключ на github
+
+</details>
+
+<details>
+<summary>У якій вкладці ці ключі зберігаються на github?</summary>
+
+-   profile settings —> SSH and GPG keys
+
+</details>
+
+<details>
+<summary>Яка послідовність створення і збереження?</summary>
+
+1. створити файл на машині, де буде зберігатися ключ
+2. додати його на github
+
+</details>
+
+<details>
+<summary>Скільки разів має створюватися цей ключ?</summary>
+
+-   один раз на одну машину
+
+</details>
+
+[Мега важливий конспект по створення і збереження ключа](https://github.com/NickTimosh/git_course/blob/main/notebooks/9.%20Github%20-%20SSH%20keys.md)
+
+---
+
+<h3 id="github-push-local-repo">GitHub — push локального репозиторію</h3>
+
+<details>
+<summary>Яка послідовність ініціалізацї, комітів та додавання файлів до локального репо (крок — команда)?</summary>
+
+1. ініціалізація репозиторію
+    1. git init
+2. додати файли до staging area
+    1. git add .
+3. зробити коміт
+    1. git commit -m `"Initial commit"`
+4. перевірка статусу (за потреби)
+    1. git status
+
+</details>
+
+<details>
+<summary>Яка команда дозволяє відправити зміни на github?</summary>
+
+-   git remote add origin `repo_link` (https or ssh)
+
+</details>
+
+<details>
+<summary>Що означає "origin"?</summary>
+
+-   використовується як псевдонім до посилання
+
+</details>
+
+<details>
+<summary>Звідки можна взяти посилання на repo?</summary>
+
+-   з github
+    -   при створення порожнього репозиторію це вікно відкривається по дефолту з детальним описом, як віддалений репозиторій підв'язати до локального
+
+</details>
+
+<details>
+<summary>Яка команда дозволяє відправити весь код з локальної машини на віддалений репозиторій після об'єднання цих репозиторіїв?</summary>
+
+-   git push -u origin main
+-   -u — від слова "upstream"
+
+</details>
+
+<details>
+<summary>За що відповідає upstream?</summary>
+
+-   повідомляє github з якої гілки брати зміни та/або в яку гілку зміни завантажувати
+    -   Upstream гілка — це віддалена гілка, до якої підключено локальну гілку для відправки та отримання змін
+
+</details>
+
+<details>
+<summary>Яка команда дозволяє перейменувати головну гілку (з master на main)?</summary>
+
+-   git branch -M main
+
+</details>
+
+---
+
+<h3 id="github-brach-and-pull">GitHub — гілки та pull request</h3>
+
+<details>
+<summary>Яка команда дозволяє відправити на віддалений репозиторій гілку, яка була створено локально?</summary>
+
+-   git push --set -upstream origin `branch_name`
+    -   зазвичай git одразу пропонує цю команду за замовчування після команди push, тому залишається тільки скопіювати її і вставити в термінал
+
+</details>
+
+<details>
+<summary>Що робить --set upstream?</summary>
+
+-   встановлює гілку на віддаленому репозиторії origin
+    -   --set-upstream встановлює зв'язок між локальною і віддаленою гілкою для автоматичної синхронізації
+
+</details>
+
+<details>
+<summary>Анатомія гілок при pull request (схема)</summary>
+
+<img src="./assets//images/pull-requrst-anatomy-branches.png" width="800" alt="Schematic of the pull request branch"/>
+
+</details>
+
+---
+
+<h3 id="github-clone-repo">GitHub — клонування репозиторію</h3>
+
+<details>
+<summary>За допомогою якої команди можна скопіювати репозиторій собі локально?</summary>
+
+-   git clone `repo_link` (https or ssh)
+
+</details>
+
+<details>
+<summary>Яка різниця між використання https та ssh посилання?</summary>
+
+-   https вимагає явної авторизації
+-   з ssh ключем проводиться неявна авторизація (немає потреби кожен раз вводити логін і пароль для підтвердження)
+
+</details>
+
+<details>
+<summary>Яка команда дозволяє відобразити які локальні гілки пов'язані з віддаленими гілками?</summary>
+
+-   git branch -vv
+-   також ця команда показує інформацію про останні коміти в цих гілках
+
+</details>
