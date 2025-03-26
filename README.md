@@ -493,7 +493,7 @@
 </details>
 
 <details>
-<summary>основні стани файлів у Git (схема)</summary>
+<summary>Основні стани файлів у Git (схема)</summary>
 
 <img src="./assets//images/main-states-files.png" width="800" alt="Basic file states"/>
 
