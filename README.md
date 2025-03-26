@@ -1542,7 +1542,7 @@
 
 </details>
 
-[Мега важливий конспект по створення і збереження ключа](https://github.com/NickTimosh/git_course/blob/main/notebooks/9.%20Github%20-%20SSH%20keys.md)
+[Мега важливий конспект по створенню і збереженню ssh ключа](https://github.com/NickTimosh/git_course/blob/main/notebooks/9.%20Github%20-%20SSH%20keys.md)
 
 ---
 
