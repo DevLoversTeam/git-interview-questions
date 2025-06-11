@@ -175,7 +175,39 @@ Working Directory -> git add -> Staging Area -> git commit -> Repository
 </details>
 
 <details>
-<summary>7. ???</summary>
+<summary>7. Що таке розгалуження (branching) у Git і чому воно важливе?</summary>
+
+#### GIT
+
+- **Розгалуження (branch)** — це окрема лінія розробки в репозиторії, яка
+  дозволяє працювати над новими функціями, виправленнями або експериментами, не
+  зачіпаючи основну гілку (main/master).
+
+- Важливість:
+
+  - Паралельна робота кількох розробників.
+
+  - Безпечне тестування нових фіч.
+
+  - Легка інтеграція через merge або rebase.
+
+  - Чистіша історія комітів і контроль над змінами.
+
+#### Приклад створення і перемикання гілки:
+
+```bash
+git branch feature-login
+
+git checkout feature-login
+```
+
+Branching — основа сучасних workflow (Git Flow, GitHub Flow) для командної
+розробки.
+
+</details>
+
+<details>
+<summary>8. ???</summary>
 
 #### GIT
 
