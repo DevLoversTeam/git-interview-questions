@@ -305,7 +305,114 @@ git clone https://github.com/user/repo.git
 </details>
 
 <details>
-<summary>11. ???</summary>
+<summary>11. Як ініціалізувати новий репозиторій Git?</summary>
+
+#### GIT
+
+- Використати команду:
+
+```bash
+git init
+```
+
+- Вона створює приховану папку .git у поточному каталозі, де зберігатиметься
+  історія комітів, гілки та конфігурація.
+
+- Далі треба додати файли й зробити перший коміт:
+
+```bash
+git add .
+
+git commit -m "Initial commit"
+```
+
+Після git init каталог стає повноцінним Git-репозиторієм.
+
+</details>
+
+<details>
+<summary>12. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>13. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>14. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>15. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>16. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>17. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>18. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>19. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>20. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>21. ???</summary>
 
 #### GIT
 
