@@ -579,7 +579,111 @@ Merge дозволяє безпечно інтегрувати паралель�
 </details>
 
 <details>
-<summary>21. ???</summary>
+<summary>21. Який Git workflow ви зазвичай використовуєте в роботі?</summary>
+
+#### GIT
+
+- Найчастіше використовую Git Flow / Feature Branch Workflow:
+
+  - `main` — завжди стабільна продакшн-версія.
+
+  - `develop` — інтеграційна гілка для нових фіч.
+
+  - для задач створюю окрему `feature`.
+
+  - після завершення — `pull request` → `code review` → `merge у develop`.
+
+  - перед релізом створюється `release`, після тестів — `merge у main` + тег.
+
+  - багфікси йдуть у `hotfix` від main.
+
+Цей процес дисциплінує, дає прозорість і контроль над релізами.
+
+</details>
+
+<details>
+<summary>22. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>23. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>24. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>25. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>26. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>27. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>28. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>29. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>30. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>31. ???</summary>
 
 #### GIT
 
