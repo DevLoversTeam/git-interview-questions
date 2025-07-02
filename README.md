@@ -1000,11 +1000,31 @@ git pull origin main       # отримати зміни
 </details>
 
 <details>
-<summary>37. ???</summary>
+<summary>37. Як змінити URL remote-репозиторію в Git?</summary>
 
 #### GIT
 
-- Coming Soon... 😎
+- Для оновлення URL використовують команду:
+
+```bash
+git remote set-url origin <новий_URL>
+```
+
+- Перевірити зміни можна так:
+
+```bash
+git remote -v
+```
+
+- Або замінити remote повністю:
+
+```bash
+git remote remove origin
+git remote add origin <новий_URL>
+```
+
+Використовується, наприклад, при переході з HTTPS на SSH чи зміні репозиторію на
+GitHub/GitLab.
 
 </details>
 
