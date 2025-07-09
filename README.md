@@ -1354,25 +1354,46 @@ git show <commit_hash> -- <file>
 </details>
 
 <details>
-<summary>48. ???</summary>
+<summary>49. Як переглянути список файлів, змінених у конкретному коміті Git?</summary>
 
 #### GIT
 
-- Coming Soon... 😎
+1. Використовують git show з параметром --name-only:
 
-</details>
+```bash
+git show --name-only <commit_hash>
+```
 
-<details>
-<summary>49. ???</summary>
+- Показує лише імена файлів, без diff.
 
-#### GIT
+2. Або --name-status, щоб бачити статус змін (додано, змінено, видалено):
 
-- Coming Soon... 😎
+```bash
+git show --name-status <commit_hash>
+```
+
+3. Для перегляду diff разом із файлами:
+
+```bash
+git show <commit_hash>
+```
+
+Це корисно для швидкого огляду, що змінився в конкретному коміті без аналізу
+повного diff.
 
 </details>
 
 <details>
 <summary>50. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>51. ???</summary>
 
 #### GIT
 
