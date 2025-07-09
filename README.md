@@ -1136,7 +1136,110 @@ git push origin main
 </details>
 
 <details>
-<summary>41. ???</summary>
+<summary>41. Для чого призначена команда git stash?</summary>
+
+#### GIT
+
+- `git stash` дозволяє тимчасово сховати незавершені зміни (modified/ staged
+  файли) у локальному репозиторії, щоб переключитися на іншу гілку або виконати
+  інші операції, не комітячи їх.
+
+#### Приклади:
+
+```bash
+git stash           # сховати зміни
+git stash pop       # повернути сховані зміни
+git stash list      # переглянути список схованих змін
+```
+
+Використовується, коли потрібно швидко переключитися на main для виправлення
+багу або pull останніх змін.
+
+</details>
+
+<details>
+<summary>42. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>43. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>44. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>45. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>46. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>47. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>48. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>48. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>49. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>50. ???</summary>
 
 #### GIT
 
