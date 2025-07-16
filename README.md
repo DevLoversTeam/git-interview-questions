@@ -1432,11 +1432,51 @@ git tag v1.0 git push origin v1.0
 </details>
 
 <details>
-<summary>52. ???</summary>
+<summary>52. Як у Git створювати, видаляти та пушити теги?</summary>
 
 #### GIT
 
-- Coming Soon... 😎
+**Створення тегів:**
+
+- Lightweight тег:
+
+```bash
+git tag v1.0
+```
+
+- Annotated тег (з повідомленням):
+
+```bash
+git tag -a v1.0 -m "Release version 1.0"
+```
+
+**Видалення тегів:**
+
+- Локально:
+
+```bash
+git tag -d v1.0
+```
+
+- Віддалено:
+
+```bash
+git push origin --delete tag v1.0
+```
+
+**Надсилання тегів на remote:**
+
+- Один тег:
+
+```bash
+git push origin v1.0
+```
+
+- Всі теги:
+
+```bash
+git push origin --tags
+```
 
 </details>
 
