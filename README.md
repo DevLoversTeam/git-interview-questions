@@ -1740,7 +1740,117 @@ IntelliJ, Meld).
 </details>
 
 <details>
-<summary>61. ???</summary>
+<summary>61. Як налаштувати ім’я користувача та email у Git?</summary>
+
+#### GIT
+
+- Для глобальних налаштувань (усі репозиторії):
+
+```bash
+git config --global user.name "Ваше Ім’я"
+git config --global user.email "ваш@email.com"
+```
+
+- Для конкретного репозиторію (тільки в поточному):
+
+```bash
+git config user.name "Ваше Ім’я"
+git config user.email "ваш@email.com"
+```
+
+- Перевірка:
+
+```bash
+git config --list
+```
+
+Email важливий для зв’язку комітів з GitHub/GitLab профілем.
+
+</details>
+
+<details>
+<summary>62. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>63. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>64. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>65. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>66. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>67. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>68. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>69. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>70. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>71. ???</summary>
 
 #### GIT
 
