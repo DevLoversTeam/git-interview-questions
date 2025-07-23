@@ -1801,11 +1801,36 @@ git config ...
 </details>
 
 <details>
-<summary>63. ???</summary>
+<summary>63. Як у Git створити alias (псевдонім) для команди?</summary>
 
 #### GIT
 
-- Coming Soon... 😎
+Псевдоніми додають через git config. Наприклад:
+
+- Глобально (для всіх репозиторіїв):
+
+```bash
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.cm "commit -m"
+```
+
+- У конкретному репозиторії:
+
+```bash
+git config alias.lg "log --oneline --graph --all --decorate"
+```
+
+Після цього можна виконувати, наприклад:
+
+```bash
+git st
+git co main
+git lg
+```
+
+Зберігаються псевдоніми у файлі ~/.gitconfig або .git/config.
 
 </details>
 
