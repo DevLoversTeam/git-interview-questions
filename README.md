@@ -1894,11 +1894,52 @@ git config --list | grep excludesfile
 </details>
 
 <details>
-<summary>66. ???</summary>
+<summary>66. Як налаштувати Git для підпису комітів GPG-ключем?</summary>
 
 #### GIT
 
-- Coming Soon... 😎
+1. Створити або імпортувати GPG-ключ
+
+```bash
+gpg --full-generate-key gpg --list-secret-keys --keyid-format=long
+```
+
+- Скопіювати GPG_KEY_ID.
+
+2. Сказати Git, який ключ використовувати
+
+```bash
+git config --global user.signingkey GPG_KEY_ID git config --global
+commit.gpgsign true # підписувати всі коміти
+```
+
+3. Опціонально — підписувати лише вибрані коміти
+
+```bash
+git commit -S -m "Signed commit"
+```
+
+4. Для GitHub/GitLab
+
+- Вивести публічний ключ:
+
+```bash
+gpg --armor --export GPG_KEY_ID
+```
+
+- Додати його в налаштування акаунта (GPG keys).
+
+5. Перевірка
+
+```bash
+git log --show-signature
+```
+
+6. У VS Code потрібно додати в settings.json:
+
+```json
+"git.enableCommitSigning": true
+```
 
 </details>
 
