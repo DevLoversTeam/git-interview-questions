@@ -2066,7 +2066,124 @@ Secrets Manager для CI/CD.
 </details>
 
 <details>
-<summary>71. ???</summary>
+<summary>71. Як у Git знайти та відновити файл, який був видалений?</summary>
+
+#### GIT
+
+1. Якщо файл ще не закомічений (видалений лише локально):
+
+```bash
+git checkout -- <file>
+```
+
+2. Якщо файл видалено і закомічено:
+
+- Знайти коміт, де файл існував:
+
+```bash
+git log -- <file>
+```
+
+- Відновити файл з того коміту:
+
+```bash
+git checkout <commit_hash> -- <file>
+```
+
+3. Відновлення файлу з останнього коміту у поточній гілці:
+
+```bash
+git restore <file>
+```
+
+Порада: перед checkout або restore переконайтеся, що немає незбережених змін,
+щоб їх не перезаписати.
+
+</details>
+
+<details>
+<summary>72. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>73. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>74. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>75. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>76. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>77. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>78. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>79. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>80. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>81. ???</summary>
 
 #### GIT
 
