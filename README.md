@@ -2288,11 +2288,31 @@ git push --force
 </details>
 
 <details>
-<summary>77. ???</summary>
+<summary>77. Як внести зміни в уже відкритий Pull Request?</summary>
 
 #### GIT
 
-- Coming Soon... 😎
+1. Перейти у гілку, на основі якої створено PR:
+
+```bash
+git checkout feature-branch
+```
+
+2. Внести потрібні зміни та закомітити їх:
+
+```bash
+git add .
+git commit -m "Updated changes for PR"
+```
+
+3. Відправити зміни у віддалений репозиторій:
+
+```bash
+git push origin feature-branch
+```
+
+Git автоматично оновить Pull Request на платформі (GitHub/GitLab/Bitbucket)
+після пушу в ту ж гілку.
 
 </details>
 
