@@ -2438,7 +2438,210 @@ Sourcetree/IntelliJ для візуального вирішення конфл�
 </details>
 
 <details>
-<summary>81. ???</summary>
+<summary>81. Які підходи використовують для роботи з великими файлами в Git?</summary>
+
+#### GIT
+
+1. **Git LFS (Large File Storage)**
+
+- Зберігає великі файли (зображення, відео, бінарники) поза основним
+  репозиторієм.
+
+- У Git зберігаються тільки посилання, а самі файли лежать у спеціальному
+  сховищі.
+
+2. **.gitignore**
+
+- Ігнорувати великі тимчасові чи згенеровані файли, які не потрібні в історії
+  (наприклад, node_modules, build-артефакти).
+
+3. **Артефакти CI/CD**
+
+- Замість зберігання бінарних файлів у репозиторії використовувати системи
+  зберігання (S3, Nexus, Artifactory).
+
+4. **Розбивка проєкту**
+
+- Виносити великі ресурси в окремі репозиторії чи підмодулі.
+
+Для фронтенду найчастіше: Git LFS для картинок/відео або S3 bucket для
+build-артефактів.
+
+</details>
+
+<details>
+<summary>82. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>83. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>84. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>85. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>86. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>87. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>88. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>89. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>90. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>91. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>92. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>93. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>94. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>95. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>96. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>97. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>98. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>99. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>100. ???</summary>
+
+#### GIT
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>101. ???</summary>
 
 #### GIT
 
